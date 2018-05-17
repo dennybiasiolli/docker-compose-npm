@@ -14,3 +14,17 @@ services:
     build: php
     volumes:
       - ./html:/html
+
+  db:
+    image: mysql:5
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
