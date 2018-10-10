@@ -23,4 +23,4 @@ After environment launch, open http://127.0.0.1/ to access web content.
 
 PhpMyAdmin can be found at http://127.0.0.1:8080/.
 
-Place your weh content in `html` directory, will be processed by Nginx/PHP.
+Place your web content in `html` directory, will be processed by Nginx/PHP.
